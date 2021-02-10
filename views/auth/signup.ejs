@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/auth/newaccount" method="POST">
+        <div class="form">
+            <label for="emailExampleSignup">Your name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form">
+            <label for="emailExampleSignup">Student ID</label>
+            <input type="text" name="id" id="id" required>
+        </div>
+        <div class="form">
+            <label for="emailExampleSignup">Email</label>
+            <input type="email" name="new_email" id="new_email" placeholder="example@gmail.com" required>
+        </div>
+        <div class="form">
+            <label for="emailExampleSignup">Password</label>
+            <input type="password" name="new_password" id="new_password" placeholder="*************" required>
+        </div>
+        <div class="form">
+            <label for="emailExampleSignup">Retype your Password</label>
+            <input type="password" name="retype_password" id="retype_password" placeholder="*************" required>
+        </div>
+        <input type="submit" value="Create a new account">
+    </form>
+    <a href="/auth/login">Already have an account ?</a>
+</body>
+</html>
